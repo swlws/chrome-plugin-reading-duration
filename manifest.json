@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Used Time",
+  "version": "1.0",
+  "description": "A simple Todo List Chrome extension.",
+  "action": {
+    "default_popup": "./popup/index.html",
+    "default_icon": {
+      "16": "icons/time_16.png",
+      "48": "icons/time_48.png",
+      "128": "icons/time_128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/time_16.png",
+    "48": "icons/time_48.png",
+    "128": "icons/time_128.png"
+  },
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "js": ["scripts/duration-of-stay.js"],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Tetris</title>
+    <style>
+      #game-board {
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      #next-piece {
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      #lines-cleared {
+        margin: 20px;
+        font-size: 20px;
+      }
+      canvas {
+        background-color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <canvas id="game-board" width="300" height="600"></canvas>
+      <div>
+        <canvas id="next-piece" width="120" height="120"></canvas>
+        <div id="lines-cleared">Lines Cleared: 0</div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
